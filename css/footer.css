@@ -132,7 +132,7 @@ text-transform: uppercase;
 }
 .footer-input-btn:focus{
     border-color: #31d0aa;
-    outline: transparent
+    outline: transparent;
 }
 .footer-subscribe-btn:hover,
 .footer-subscribe-btn:focus{

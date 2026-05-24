@@ -390,13 +390,13 @@
             </ul>
             </div>
             <div class="subscribe-container">
-                <p class="subscribe-title">Subcribe</p>
+                <p class="subscribe-title">Subscribe</p>
             <form class="footer-form">
                 <label class="subscribe-label">
                 <input type="email" class="footer-input-btn" placeholder="E-mail" />
                 </label>
                 <button type="submit" class="footer-subscribe-btn">Subscribe
-                    <svg class="subscribe-icon" width="24" height="20">
+                    <svg class="subscribe-icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-send"></use>
                     </svg>
                 </button>
@@ -406,10 +406,7 @@
         </div>
     </footer>
 
-    <!-- #region form -->
-
-    <div class="backdrop">
-        <!-- hide popup -->
+    <div class="backdrop" id="modal">
         <div class="modal">
             <button type="button" class="close-popup">
                 <svg height="8px" width="8px">
@@ -432,7 +429,7 @@
                 <div class="form-field">
                     <label class="form-label" for="user-phone">Phone</label>
                     <div class="input-wrapper">
-                        <input type="tel" class="form-input" name="user-phone" id="user-name" required />
+                        <input type="tel" class="form-input" name="user-phone" id="user-phone" required />
                         <svg class="form-item" width="13" height="13">
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
@@ -448,11 +445,11 @@
                     </div>
                 </div>
                 <div class="form-field">
-                    <label class="form-label" for="comment">Comment</label>
+                    <label class="form-label" for="user-comment" id="user-comment">Comment</label>
                     <textarea class="form-textarea" name="user-comment" id="user-comment" placeholder="Text input"></textarea>
                 </div>
                 <div class="checkbox-container">
-                    <input type="checkbox" id="user-terms" name="user-terms" value="true" required class=" input-checkbox visually-hidden" />
+                    <input type="checkbox" id="user-terms" name="user-terms" value="true" required class="input-checkbox visually-hidden" />
                     <label for="user-terms" class="terms-label">
                         <span class="custom-checkbox">
                         <svg class="checkbox-icon" width="21" height="21">
@@ -467,7 +464,6 @@
         </div>
     </div>
     
-    <!-- #endregion form -->
      
     </body>
     </html>

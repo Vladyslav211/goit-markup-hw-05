@@ -52,7 +52,7 @@ text-transform: uppercase;
 }
 .footer-container{
     display: flex;
-    align-items: flex-start;
+    align-items: baseline;
     justify-content: flex-start;
 }
 .footer-social{
@@ -72,12 +72,10 @@ text-transform: uppercase;
     line-height: 1.5;
     color: #ffffff;
     margin-bottom: 16px;
+    letter-spacing: 0.02em;
 }
-.subscribe-form{
-    display: flex;
-    gap: 24px;
-}
-footer-subscribe-btn{
+
+.footer-subscribe-btn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,7 +84,7 @@ footer-subscribe-btn{
 .subscribe-container{
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
+    margin-left: auto;
 }
 .footer-input-btn{
     width: 264px;
@@ -95,6 +93,12 @@ footer-subscribe-btn{
     background-color: transparent;
     padding-left:16px;
     color: #ffffff;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 12px; 
+    line-height: 2;
+    letter-spacing: 0.04em;
+
 }
 .footer-subscribe-btn{
     max-width: 165px;
@@ -111,6 +115,7 @@ footer-subscribe-btn{
      display: flex;
      align-items: center;
      justify-content: center;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
      gap: 16px;
 }
@@ -120,4 +125,15 @@ footer-subscribe-btn{
 .footer-form{
     display: flex;
     gap: 24px;
+}
+.footer-input::placeholder{
+    color: #ffffff;
+}
+.footer-input:focus{
+    border-color: 31d0aa;
+    outline: transparent
+}
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus{
+    background-color: 31d0aa;
 }
